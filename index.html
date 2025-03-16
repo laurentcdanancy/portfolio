@@ -1,4 +1,4 @@
-c<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
@@ -6,8 +6,7 @@ c<!DOCTYPE html>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <style>
     body,
     h1,
@@ -224,12 +223,12 @@ c<!DOCTYPE html>
         color: #ffcc00;
     }
 
-    .testimonial-card::before {
+    /* .testimonial-card::before {
         content: "🌍";
         font-size: 30px;
         margin-right: 10px;
         color: #ffcc00;
-    }
+    }*/
 
     .testimonial-card::after {
         content: "💡";
@@ -239,17 +238,17 @@ c<!DOCTYPE html>
     }
 
     .testimonial-name::after {
-        font-size: 16px;
+        content: " - L'Atypique";
         font-style: italic;
         color: #ffcc00;
     }
 
     /* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {
-#main {
-margin-left: 0
-}
-}
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
 </style>
 
 
@@ -470,13 +469,13 @@ margin-left: 0
                 </div>
             </div>
 
-              <!-- Testimonials -->
+            <!-- Testimonials -->
             <div class="testimonial-container">
                 <h3>Bulent Tasgin - Le Voyageur de l'Innovation</h3>
 
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <img src="bul8.PNG" alt="boy" class="testimonial-avatar" />
+                        <img src="bul8.png" alt="boy" class="testimonial-avatar" />
                         <p class="testimonial-name">Bulent, l'Aventurier</p>
                         <p class="testimonial-position">Explorateur des idées et des horizons</p>
                         <p class="testimonial-text">Son esprit n'est jamais en pause. Partout où il va, il absorbe des
@@ -508,7 +507,7 @@ margin-left: 0
                 </div>
 
                 <div class="testimonial-card">
-                    <img src="bul9.PNG" alt="boy" class="testimonial-avatar" />
+                    <img src="bul9.png" alt="boy" class="testimonial-avatar" />
                     <div class="testimonial-content">
                         <p class="testimonial-name">Bulent, l'Inattendu</p>
                         <p class="testimonial-position">Créateur et Explorateur du Possible</p>
@@ -554,18 +553,26 @@ margin-left: 0
 
             <!-- Grid for photos -->
             <div class="w3-row-padding" style="margin:0 -16px">
-                <div class="w3-half">
-                    <img src="/w3images/wedding.jpg" style="width:100%">
-                    <img src="/w3images/rocks.jpg" style="width:100%">
-                    <img src="/w3images/sailboat.jpg" style="width:100%">
+                <div>
+                    <img src="bul3.png" alt="boy" class="w3-image" width="300" height=auto />
+                    <img src="bul3.png" alt="boy" class="w3-image" width="300" height=auto />
+                    <img src="bul3.png" alt="boy" class="w3-image" width="300" height=auto />
+
                 </div>
 
-                <div class="w3-half">
-                    <img src="/w3images/underwater.jpg" style="width:100%">
-                    <img src="/w3images/chef.jpg" style="width:100%">
-                    <img src="/w3images/wedding.jpg" style="width:100%">
-                    <img src="/w3images/p6.jpg" style="width:100%">
+                <div>
+                    <img src="bul3.png" alt="boy" class="w3-image" width="300" height=auto />
+                    <img src="bul3.png" alt="boy" class="w3-image" width="300" height=auto />
+                    <img src="bul3.png" alt="boy" class="w3-image" width="300" height=auto />
+
                 </div>
+                <div>
+                    <img src="bul3.png" alt="boy" class="w3-image" width="300" height=auto />
+                    <img src="bul3.png" alt="boy" class="w3-image" width="300" height=auto />
+                    <img src="bul3.png" alt="boy" class="w3-image" width="300" height=auto />
+
+                </div>
+
                 <!-- End photo grid -->
             </div>
             <!-- End Portfolio Section -->
@@ -603,27 +610,28 @@ margin-left: 0
         </div>
 
         <!-- Footer -->
-    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <!-- Icônes des réseaux sociaux -->
-    <a href="https://www.facebook.com/bulent.tasgin/" target="_blank" rel="noopener noreferrer"
-        title="Mon profil Facebook">
-        <i class="fa-brands fa-facebook w3-hover-opacity"></i>
-    </a>
-    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram">
-        <i class="fa-brands fa-instagram w3-hover-opacity"></i>
-    </a>
-    <a href="https://www.snapchat.com/" target="_blank" rel="noopener noreferrer" title="Snapchat">
-        <i class="fa-brands fa-snapchat w3-hover-opacity"></i>
-    </a>
-    <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" title="Pinterest">
-        <i class="fa-brands fa-pinterest w3-hover-opacity"></i>
-    </a>
-    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" title="Twitter">
-        <i class="fa-brands fa-twitter w3-hover-opacity"></i>
-    </a>
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+            <!-- Icônes des réseaux sociaux -->
+            <a href="https://www.facebook.com/bulent.tasgin/" target="_blank" rel="noopener noreferrer"
+                title="Mon profil Facebook">
+                <i class="fa-brands fa-facebook w3-hover-opacity"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                <i class="fa-brands fa-instagram w3-hover-opacity"></i>
+            </a>
+            <a href="https://www.snapchat.com/" target="_blank" rel="noopener noreferrer" title="Snapchat">
+                <i class="fa-brands fa-snapchat w3-hover-opacity"></i>
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" title="Pinterest">
+                <i class="fa-brands fa-pinterest w3-hover-opacity"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" title="Twitter">
+                <i class="fa-brands fa-twitter w3-hover-opacity"></i>
+            </a>
 
-    <p>Powered by <a href="" target="_blank" class="w3-hover-text-green">Bulent</a></p>
-</footer>
+            <p>Powered by <a href="" target="_blank" class="w3-hover-text-green">Bulent</a></p>
+        </footer>
+
 
 
         <!-- END PAGE CONTENT -->
