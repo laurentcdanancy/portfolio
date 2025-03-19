@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <style>
+    /*==================== Global Styles ====================*/
+
+    /* Application de la police Montserrat à tous les éléments de texte */
     body,
     h1,
     h2,
@@ -15,39 +18,51 @@
     h4,
     h5,
     h6 {
-        font-family: "Montserrat", sans-serif
+        font-family: "Montserrat", sans-serif;
     }
 
+    /*==================== Header Styles ====================*/
+
+    /* Couleur du titre h2 */
     h2 {
         color: rgb(57, 233, 51);
     }
 
+    /* Couleur du titre h4 */
     h4 {
         color: rgb(17, 189, 232);
     }
 
+    /* Style de base pour les paragraphes et listes */
     p,
     ul,
     li {
         color: white;
     }
 
+    /*==================== Image Styling ====================*/
+
+    /* Espacement des images dans une ligne avec padding */
     .w3-row-padding img {
-        margin-bottom: 12px
+        margin-bottom: 12px;
     }
 
+    /*==================== Sidebar and Main Content ====================*/
 
-    /* Set the width of the sidebar to 120px */
+    /* Largeur de la sidebar et fond */
     .w3-sidebar {
         width: 120px;
         background: #222;
     }
 
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    /* Espace laissé pour le contenu principal */
     #main {
-        margin-left: 120px
+        margin-left: 120px;
     }
 
+    /*==================== Progress Bar ====================*/
+
+    /* Conteneur de la barre de progression */
     .progress-container {
         width: 100%;
         background-color: #f1f1f1;
@@ -56,18 +71,22 @@
         margin-bottom: 10px;
     }
 
+    /* Barre de progression (rouge) */
     .progress-bar {
         height: 28px;
         background-color: #F44336;
-        /* Rouge */
         border-radius: 5px;
     }
 
-    .w3-wide {
+    /* Texte de la barre de progression */
+    .progressbar {
         font-weight: bold;
         margin-bottom: 5px;
     }
 
+    /*==================== Product Card Styles ====================*/
+
+    /* Card produit avec fond sombre et effet au survol */
     .product-card {
         list-style: none;
         padding: 0;
@@ -80,16 +99,19 @@
         color: white;
     }
 
+    /* Effet de survol de la card produit (zoom et ombre) */
     .product-card:hover {
         transform: scale(1.05);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     }
 
+    /* Espacement et bordure des éléments de la card produit */
     .product-card li {
         padding: 16px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 
+    /* Titre du produit */
     .product-title {
         background: #f44336;
         font-size: 22px;
@@ -99,6 +121,7 @@
         border-top-right-radius: 10px;
     }
 
+    /* Dernière section de la card produit sans bordure */
     .product-card li:last-child {
         border-bottom: none;
         background: #f1f1f1;
@@ -106,6 +129,7 @@
         border-bottom-right-radius: 10px;
     }
 
+    /* Prix du produit */
     .product-price {
         margin: 10px 0;
         color: #ffcc00;
@@ -113,11 +137,13 @@
         font-weight: bold;
     }
 
+    /* Détails du produit */
     .product-details {
         font-size: 14px;
         color: #bbb;
     }
 
+    /* Bouton du produit */
     .product-button {
         background: #ffcc00;
         color: black;
@@ -126,14 +152,18 @@
         border: none;
         cursor: pointer;
         border-radius: 5px;
-        transition: background 0.3s ease-in-out;
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
     }
 
+    /* Effet au survol du bouton produit */
     .product-button:hover {
-        background: #e6b800;
+        background: #1be514;
+        color: white;
     }
 
-    /* Responsive */
+    /*==================== Responsive Styles ====================*/
+
+    /* Adaptation pour les écrans de petite taille */
     @media (max-width: 768px) {
         .product-container {
             display: block;
@@ -145,27 +175,15 @@
         }
     }
 
-    .progress-bar {
-        height: 28px;
-        background-color: #16b5dd !important;
-        /* Force le rouge */
-        border-radius: 5px;
-        transition: width 0.5s ease-in-out;
-        /* Animation fluide */
-    }
+    /*==================== Testimonial Styles ====================*/
 
-    .produit {
-        color: #F44336;
-        background-color: rgb(88, 92, 92);
-    }
-
-
-
+    /* Conteneur des témoignages */
     .testimonial-container {
         max-width: 800px;
         margin: auto;
     }
 
+    /* Carte de témoignage avec dégradé et ombre */
     .testimonial-card {
         background: linear-gradient(135deg, #1e1e1e, #292929);
         padding: 20px;
@@ -178,11 +196,13 @@
         border-left: 5px solid #ffcc00;
     }
 
+    /* Effet de survol des cartes de témoignages */
     .testimonial-card:hover {
         transform: scale(1.05);
         box-shadow: 0 8px 16px rgba(255, 204, 0, 0.5);
     }
 
+    /* Avatar du témoignage */
     .testimonial-avatar {
         width: 80px;
         height: 80px;
@@ -191,39 +211,38 @@
         border: 3px solid #ffcc00;
     }
 
+    /* Contenu du témoignage */
     .testimonial-content {
         text-align: left;
     }
 
+    /* Nom du témoignage */
     .testimonial-name {
         font-size: 22px;
         font-weight: bold;
         color: #ffcc00;
     }
 
+    /* Position du témoignage */
     .testimonial-position {
         font-size: 14px;
         color: #bbb;
         font-style: italic;
     }
 
+    /* Texte du témoignage */
     .testimonial-text {
         font-size: 16px;
         color: #ddd;
         margin-top: 5px;
     }
 
+    /* Titre de la section des témoignages */
     .testimonial-container h3 {
         color: #ffcc00;
     }
 
-    /* .testimonial-card::before {
-        content: "🌍";
-        font-size: 30px;
-        margin-right: 10px;
-        color: #ffcc00;
-    }*/
-
+    /* Icône de témoignage après le nom */
     .testimonial-card::after {
         content: "💡";
         font-size: 30px;
@@ -231,12 +250,16 @@
         color: #ffcc00;
     }
 
+    /* Suffixe du nom du témoignage */
     .testimonial-name::after {
         content: " - L'Atypique";
         font-style: italic;
         color: #ffcc00;
     }
 
+    /*==================== Image Gallery Styles ====================*/
+
+    /* Conteneur des images */
     .image-container {
         display: flex;
         justify-content: space-around;
@@ -244,43 +267,101 @@
         gap: 20px;
         padding: 20px;
         border: 2px solid #ccc;
-        /* Bordure autour du cadre */
         border-radius: 10px;
-        /* Coins arrondis */
         background-color: #f9f9f9;
-        /* Couleur de fond du cadre */
     }
 
+    /* Image du chantier */
     .chantier {
         width: 300px;
-        /* Largeur uniforme */
         height: 350px;
-        /* Hauteur uniforme */
         object-fit: cover;
-        /* Redimensionne l'image sans déformation, tout en remplissant l'espace */
         border: 2px solid #ddd;
-        /* Bordure autour de chaque image */
         border-radius: 10px;
-        /* Coins arrondis pour chaque image */
         transition: transform 0.3s ease;
-        /* Transition fluide pour l'effet de zoom */
         margin: 5px;
-        /* Marges internes autour de chaque image pour ajouter de l'espace */
     }
 
+    /* Effet de zoom sur l'image du chantier */
     .chantier:hover {
         transform: scale(1.5);
-        /* Zoom de 20% lors du survol */
     }
 
-
-
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {
-        #main {
-            margin-left: 0
-        }
+    /* Bouton de téléchargement */
+    .download-button {
+        height: 40px;
+        color: #5216dd;
+        font-weight: 900;
+        margin-top: 5px;
     }
+
+    /* Effet au survol du bouton de téléchargement */
+    .download-button:hover {
+        color: #efeef3;
+        background-color: #0909e0;
+    }
+
+    /*==================== Sidebar Styles ====================*/
+
+    /* Sidebar générale */
+    .side-bar {
+        width: 250px;
+        background-color: #0e0e0e;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding-top: 20px;
+        text-align: center;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Image de profil dans la sidebar */
+    .avatar {
+        width: 50%;
+        border-bottom: 2px solid #ddd;
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    /* Liens de navigation dans la sidebar */
+    .nav-item {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        transition: background 0.3s, color 0.3s;
+        background-color: #000;
+    }
+
+    /* P sous les éléments de navigation */
+    .nav-item p {
+        margin: 5px 0 0;
+        font-weight: bold;
+    }
+
+    /* Icônes de la sidebar */
+    .icon {
+        font-size: 24px;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /* Effet de survol dans la sidebar */
+    .nav-item:hover {
+        background-color: #333;
+        color: #fff;
+        width: 100px;
+    }
+
+    /* Éléments actifs dans la sidebar */
+    .active {
+        background-color: #000;
+        color: #fff;
+    }
+
+    /*==================== Navbar Mobile ====================*/
 
     /* Navbar mobile */
     .mobile-nav {
@@ -293,14 +374,14 @@
         z-index: 1000;
     }
 
-    /* Conteneur des liens */
+    /* Conteneur des liens de la navbar mobile */
     .nav-container {
         display: flex;
         justify-content: space-around;
         padding: 10px 0;
     }
 
-    /* Style des liens */
+    /* Style des liens dans la navbar mobile */
     .nav-item {
         color: white;
         text-decoration: none;
@@ -309,13 +390,13 @@
         transition: 0.3s;
     }
 
-    /* Effet au survol */
+    /* Effet au survol des liens dans la navbar mobile */
     .nav-item:hover {
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(234, 224, 232, 0.2);
         border-radius: 5px;
     }
 
-    /* Cachée sur les écrans moyens et grands */
+    /* Masquer la navbar mobile sur les écrans larges */
     @media only screen and (min-width: 768px) {
         .mobile-nav {
             display: none;
@@ -329,26 +410,29 @@
 <body class="w3-black">
 
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
-    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-        <!-- Avatar image in top left corner -->
-        <img src="bul3.png" style="width:100%">
-        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-            <i class="fa fa-home w3-xxlarge"></i>
+    <nav class="side-bar">
+        <!-- Image Avatar en haut -->
+        <img src="bul3.png" class="avatar">
+
+        <!-- Boutons de navigation -->
+        <a href="#" class="nav-item active">
+            <i class="fa fa-home icon"></i>
             <p>HOME</p>
         </a>
-        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i class="fa fa-user w3-xxlarge"></i>
+        <a href="#about" class="nav-item">
+            <i class="fa fa-user icon"></i>
             <p>ABOUT</p>
         </a>
-        <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i class="fa fa-eye w3-xxlarge"></i>
+        <a href="#photos" class="nav-item">
+            <i class="fa fa-eye icon"></i>
             <p>PHOTOS</p>
         </a>
-        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i class="fa fa-envelope w3-xxlarge"></i>
+        <a href="#contact" class="nav-item">
+            <i class="fa fa-envelope icon"></i>
             <p>CONTACT</p>
         </a>
     </nav>
+
 
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
     <!-- Navbar pour mobile (cachée sur les grands écrans) -->
@@ -407,6 +491,7 @@
 
             <h4>Évaluation et estimation de mes compétences par l'IA :</h4>
             <p>
+            <ul>
                 <li><span class="eval">Pilotage de projets BTP : 85% </span>(Tu as une solide expérience dans le
                     domaine).</li>
                 <li><span class="eval">Supervision de chantier : 90%</span>(Tu sembles très à l'aise dans ce domaine).
@@ -427,43 +512,44 @@
                     perfectionner davantage).</li>
                 Ces pourcentages reflètent un bon niveau dans chaque domaine, en tenant compte de l'expérience que tu as
                 dans le BTP et de tes compétences en développement web.
+            </ul>
             </p>
-            <p class="w3-wide">Pilotage de projets BTP</p>
+            <p class="progressbar">Pilotage de projets BTP</p>
             <div class="progress-container">
                 <div class="progress-bar" style="width:85%;"></div>
             </div>
 
-            <p class="w3-wide">Supervision de chantier</p>
+            <p class="progressbar">Supervision de chantier</p>
             <div class="progress-container">
                 <div class="progress-bar" style="width:90%;"></div>
             </div>
 
-            <p class="w3-wide">Gestion de projet construction</p>
+            <p class="progressbar">Gestion de projet construction</p>
             <div class="progress-container">
                 <div class="progress-bar" style="width:88%;"></div>
             </div>
 
-            <p class="w3-wide">Web Design (html, css, javascript)</p>
+            <p class="progressbar">Web Design (html, css, javascript)</p>
             <div class="progress-container">
                 <div class="progress-bar" style="width:70%;"></div>
             </div>
 
-            <p class="w3-wide">Développement Web (PHP, Java)</p>
+            <p class="progressbar">Développement Web (PHP, Java)</p>
             <div class="progress-container">
                 <div class="progress-bar" style="width:75%;"></div>
             </div>
 
-            <p class="w3-wide">AutoCAD, Revit</p>
+            <p class="progressbar">AutoCAD, Revit</p>
             <div class="progress-container">
                 <div class="progress-bar" style="width:80%;"></div>
             </div>
 
-            <p class="w3-wide">Excel, Office Microsoft</p>
+            <p class="progressbar">Excel, Office Microsoft</p>
             <div class="progress-container">
                 <div class="progress-bar" style="width:95%;"></div>
             </div>
 
-            <p class="w3-wide">Gestion de projet : Construction, Commerce, Web</p>
+            <p class="progressbar">Gestion de projet : Construction, Commerce, Web</p>
             <div class="progress-container">
                 <div class="progress-bar" style="width:72%;"></div>
             </div>
@@ -471,26 +557,27 @@
 
 
 
-            <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-                <div class="w3-quarter w3-section">
-                    <span class="w3-xlarge">1 Grande distri</span><br>
+            <div class="info-row">
+                <div class="info-section">
+                    <span class="section-title">1 Grande distri</span><br>
                     Els - Chef de rayon - Responsable Magasin - Responsable de vente
                 </div>
-                <div class="w3-quarter w3-section">
-                    <span class="w3-xlarge">2 Batiment </span><br>
+                <div class="info-section">
+                    <span class="section-title">2 Batiment</span><br>
                     Manoeuvre ouvrier - chef de chantier - Economiste de la construction- Conducteur de travaux
                 </div>
-                <div class="w3-quarter w3-section">
-                    <span class="w3-xlarge">3 Programmation </span><br>
+                <div class="info-section">
+                    <span class="section-title">3 Programmation</span><br>
                     Interface utilisateur : html csss javascript, Langage programation : java pyton c#
                 </div>
-                <div class="w3-quarter w3-section">
-                    <span class="w3-xlarge">4 Langue - Sport </span><br>
+                <div class="info-section">
+                    <span class="section-title">4 Langue - Sport</span><br>
                     Turc - Francais - Anglais - Chinois - Allemand => Karate - Taekwando - Boxe - Football
                 </div>
             </div>
 
-            <button class="w3-button w3-light-grey w3-padding-large w3-section">
+
+            <button class="download-button">
                 <i class="fa fa-download"></i> Download Resume
             </button>
             <!-- Produit info -->
@@ -764,7 +851,7 @@
                 <i class="fa-brands fa-twitter w3-hover-opacity"></i>
             </a>
 
-            <p>Powered by <a href="" target="_blank" class="w3-hover-text-green">Bulent cava</a></p>
+            <p>Powered by <a href="" target="_blank" class="w3-hover-text-green">Bülent Tasgin</a></p>
         </footer>
 
 
