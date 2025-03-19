@@ -164,16 +164,7 @@
     /*==================== Responsive Styles ====================*/
 
     /* Adaptation pour les écrans de petite taille */
-    @media (max-width: 768px) {
-        .product-container {
-            display: block;
-        }
 
-        .product-wrapper {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-    }
 
     /*==================== Testimonial Styles ====================*/
 
@@ -397,9 +388,33 @@
     }
 
     /* Masquer la navbar mobile sur les écrans larges */
-    @media only screen and (min-width: 768px) {
-        .mobile-nav {
-            display: none;
+    .mobile-nav {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+
+
+
+        .side-bar {
+            width: 100px;
+            background-color: #0e0e0e;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            padding-top: 20px;
+            text-align: center;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-container {
+            display: block;
+        }
+
+        .product-wrapper {
+            width: 100%;
+            margin-bottom: 20px;
         }
     }
 </style>
