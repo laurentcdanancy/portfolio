@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSPPS - Fiches Sécurité</title>
+    <style>
+        body {
+            margin: 0 auto;
+            /* Centrer horizontalement */
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            width: 80%;
+            border: 2px solid #0c0c0c;
+            /* Bordure verte solide */
+
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header,
+        footer {
+            background-color: #2ecc71;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #090909;
+        }
+
+        ul.navbar li {
+            float: left;
+        }
+
+        ul.navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.navbar li a:hover:not(.active) {
+            background-color: #c73636;
+        }
+
+        .active {
+            background-color: #0558e8;
+        }
+
+        main {
+            background-color: white;
+            margin-top: 30px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            min-height: 500px;
+            /* adapte cette valeur si besoin */
+            box-sizing: border-box;
+        }
+
+
+        main h2 {
+            margin-top: 0;
+            font-size: 1.8em;
+            color: #2c3e50;
+        }
+
+        main ul {
+            margin-top: 15px;
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        main ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>PSPPS - Fiches Sécurité</h1>
+        </div>
+    </header>
+
+    <ul class="navbar">
+        <li> <a class="active" href="index.html">Home</a></li>
+        <li> <a href="compactage.html">Compactage</a></li>
+        <li> <a href="decapage.html">Décapage</a></li>
+        <li><a href="recepage.html">Recépage</a></li>
+        <li><a href="remblai.html">Remblai</a></li>
+        <li> <a href="psppsb-compactage-rembla.html"></a></li>
+        <li> <a href="psppsb-decapages.html"></a></li>
+        <li><a href="psppsb-recepagea4.html"></a></li>
+        <li><a href="psppsb-remblai.html"></a></li>
+    </ul>
+
+    <div class="container">
+        <main>
+            <h2>Bienvenue</h2>
+            <p>Accédez ici aux fiches sécurité PSPPS pour les opérations de chantier les plus courantes. Chaque fiche
+                contient :</p>
+
+            <ul>
+                <li>✅ Les objectifs de la tâche</li>
+                <li>⚠️ Les risques associés</li>
+                <li>🛡️ Les mesures de prévention recommandées</li>
+            </ul>
+
+            <p>Utilisez le menu ci-dessus pour consulter les fiches correspondant à chaque tâche.</p>
+
+            <h3>📄 Visualiser une fiche PDF :</h3>
+            <iframe src="Compactage.pdf" width="100%" height="600px"
+                style="border:1px solid #ccc; border-radius: 10px;">
+                Ce navigateur ne supporte pas les PDF intégrés. <a href="mon-fichier.pdf" target="_blank">Cliquez ici
+                    pour télécharger le fichier.</a>
+            </iframe>
+
+        </main>
+    </div>
+
+    <footer>
+        &copy; 2025 PSPPS. Tous droits réservés.
+    </footer>
+
+</body>
+
+</html>
